@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+   <title>
+       {% block title %}
+           Class Note Archive
+       {% endblock %}
+   </title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+
+</head>
+<body>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+
+    {% block page_script %}
+
+    {% endblock %}
+
+</body>
+</html>
